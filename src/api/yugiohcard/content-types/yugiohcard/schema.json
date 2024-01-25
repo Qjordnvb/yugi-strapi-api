@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yugiohcards",
+  "info": {
+    "singularName": "yugiohcard",
+    "pluralName": "yugiohcards",
+    "displayName": "Yugiohcard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image_url_small": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "archetype": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
